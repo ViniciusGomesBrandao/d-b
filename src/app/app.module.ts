@@ -24,6 +24,7 @@ import { FilterPipe } from './pipe/filter.pipe';
 
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { NgxUiLoaderModule } from 'ngx-ui-loader';
 
 export function HttpLoaderFactory(http: HttpClient): any {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -34,7 +35,6 @@ export function HttpLoaderFactory(http: HttpClient): any {
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
@@ -49,6 +49,8 @@ export function HttpLoaderFactory(http: HttpClient): any {
     }),
     NgScrollbarModule,
     FullComponent,
+    NgxUiLoaderModule,
+    HttpClientModule
   ],
   exports: [TablerIconsModule],
   bootstrap: [AppComponent],

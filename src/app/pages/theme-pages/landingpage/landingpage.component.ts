@@ -28,6 +28,7 @@ interface testimonials {
   name: string;
   subtext: string;
   imgSrc: string;
+  text: string;
 }
 
 interface features {
@@ -122,37 +123,37 @@ export class AppLandingpageComponent {
     {
       id: 1,
       imgSrc: '/assets/images/landingpage/demos/demo-main.jpg',
-      name: 'Main',
+      name: 'Cadastro de Cliente',
       url: 'https://modernize-angular-main.netlify.app/dashboards/dashboard1',
     },
     {
       id: 2,
       imgSrc: '/assets/images/landingpage/demos/demo-dark.jpg',
-      name: 'Dark',
+      name: 'Verificação de Identidade do Cliente',
       url: 'https://modernize-angular-dark.netlify.app/dashboards/dashboard2',
     },
     {
       id: 3,
       imgSrc: '/assets/images/landingpage/demos/demo-firebase.jpg',
-      name: 'Authguard',
+      name: 'Política de Conformidade KYC',
       url: 'https://modernize-angular-authguard.netlify.app/authentication-side-login',
     },
     {
       id: 4,
       imgSrc: '/assets/images/landingpage/demos/demo-rtl.jpg',
-      name: 'RTL',
+      name: 'Due Diligence',
       url: 'https://modernize-angular-rtl.netlify.app/dashboards/dashboard1',
     },
     {
       id: 5,
       imgSrc: '/assets/images/landingpage/demos/demo-minisidebar.jpg',
-      name: 'Minisidebar',
+      name: 'Avaliação de Risco',
       url: 'https://modernize-angular-minisidebar.netlify.app/dashboards/dashboard1',
     },
     {
       id: 6,
       imgSrc: '/assets/images/landingpage/demos/demo-horizontal.jpg',
-      name: 'Horizontal',
+      name: 'Relatório de Transações Suspeitas (STR)',
       url: 'https://modernize-angular-horizontal.netlify.app/dashboards/dashboard2',
     },
   ];
@@ -236,112 +237,73 @@ export class AppLandingpageComponent {
     {
       id: 1,
       imgSrc: '/assets/images/profile/user-1.jpg',
-      name: 'Jenny Wilson',
-      subtext: 'Features avaibility',
+      name: 'João S.',
+      subtext: 'CEO',
+      text: 'O Due Guard mudou completamente a forma como lidamos com a conformidade. Antes, passávamos horas tentando juntar todos os dados necessários para os relatórios. Agora, com o Due Guard, tudo ficou mais simples. É como se tivéssemos ganhado tempo para focar em outras áreas importantes do nosso negócio. Sensacional!'
     },
     {
       id: 2,
       imgSrc: '/assets/images/profile/user-2.jpg',
-      name: 'Minshan Cui',
-      subtext: 'Features avaibility',
+      name: 'Maria T',
+      subtext: 'Diretora de Operações',
+      text: "Sou Diretora de Operações e posso dizer que o Due Guard foi um verdadeiro achado. Ele não só facilitou o nosso trabalho, como também nos deu uma nova perspectiva sobre como lidar com a conformidade. É uma ferramenta incrível que eu recomendaria a qualquer empresa."
     },
     {
       id: 3,
       imgSrc: '/assets/images/profile/user-3.jpg',
-      name: 'Eminson Mendoza',
-      subtext: 'Features avaibility',
+      name: 'Pedro D.',
+      subtext: 'Gerente de TI',
+      text: "Desde o primeiro dia de uso, o Due Guard me surpreendeu. A interface é amigável e eu nem precisei de um manual para começar a usar. Além disso, o suporte ao cliente é simplesmente incrível. Eles estão sempre disponíveis para nos ajudar com qualquer dúvida ou problema que possamos ter. Sinceramente, não consigo imaginar minha vida sem o Due Guard agora."
     },
   ];
 
   features: features[] = [
     {
       id: 1,
-      icon: 'wand',
-      title: '6 Theme Colors',
+      icon: 'file-settings',
+      title: 'Relatórios Personalizados',
       subtext:
-        'We have included 6 pre-defined Theme Colors with Elegant Admin.',
+        'Crie relatórios customizados de acordo com suas necessidades específicas',
     },
     {
       id: 2,
-      icon: 'shield-lock',
-      title: 'Authguard',
+      icon: 'puzzle-2',
+      title: 'Módulos Flexíveis',
       subtext:
-        'AuthGuard is used to protect the routes from unauthorized access in angular..',
+        'Escolha entre uma variedade de módulos para atender às demandas do seu negócio. ',
     },
     {
       id: 3,
-      icon: 'archive',
-      title: '80+ Page Templates',
-      subtext: 'Yes, we have 6 demos & 80+ Pages per demo to make it easier.',
+      icon: 'heart-handshake',
+      title: 'Suporte ao Cliente',
+      subtext: 'Conte com nossa equipe de suporte dedicada para ajudá-lo sempre que precisar',
     },
     {
       id: 4,
-      icon: 'adjustments',
-      title: '50+ UI Components',
-      subtext:
-        'Almost 50+ UI Components being given with Modernize Admin Pack.',
+      icon: 'file-stack',
+      title: 'Histórico de Auditoria',
+      subtext: 'Mantenha um registro detalhado de todas as atividades realizadas no sistema',
     },
     {
       id: 5,
-      icon: 'tag',
-      title: 'Material ',
-      subtext: 'Its been made with Material and full responsive layout.',
+      icon: 'shield-check',
+      title: 'Segurança Avançada',
+      subtext:
+        'Proteja seus dados com recursos de segurança avançados e criptografia.',
     },
     {
       id: 6,
-      icon: 'diamond',
-      title: '3400+ Font Icons',
+      icon: 'file-export',
+      title: 'Exportação de Dados',
       subtext:
-        'Lots of Icon Fonts are included here in the package of Elegant Admin.',
+        'Exporte facilmente seus relatórios e dados para diferentes formatos. ',
     },
     {
       id: 7,
-      icon: 'language-katakana',
-      title: 'i18 Angular',
-      subtext: 'i18 is a powerful internationalization framework for React.',
-    },
-    {
-      id: 8,
-      icon: 'arrows-shuffle',
-      title: 'Easy to Customize',
-      subtext: 'Customization will be easy as we understand your pain.',
-    },
-    {
-      id: 9,
-      icon: 'chart-pie',
-      title: 'Lots of Chart Options',
-      subtext: 'You name it and we have it, Yes lots of variations for Charts.',
-    },
-    {
-      id: 10,
-      icon: 'layers-intersect',
-      title: 'Lots of Table Examples',
-      subtext: 'Data Tables are initial requirement and we added them.',
-    },
-    {
-      id: 11,
-      icon: 'refresh',
-      title: 'Regular Updates',
-      subtext: 'We are constantly updating our pack with new features..',
-    },
-    {
-      id: 12,
-      icon: 'book',
-      title: 'Detailed Documentation',
-      subtext: 'We have made detailed documentation, so it will easy to use.',
-    },
-    {
-      id: 13,
-      icon: 'calendar',
-      title: 'Calendar Design',
-      subtext: 'Calendar is available with our package & in nice design.',
-    },
-    {
-      id: 14,
-      icon: 'messages',
-      title: 'Dedicated Support',
-      subtext: 'We believe in supreme support is key and we offer that.',
-    },
+      icon: 'settings',
+      title: 'Integração com Outras Ferramentas',
+      subtext: 'Integre o Due Guard com outras ferramentas e softwares que você já utiliza.',
+    }
   ];
 
   quicklinks: quicklinks[] = [

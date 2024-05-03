@@ -173,32 +173,32 @@ export class HeaderComponent {
   ];
 
   apps: apps[] = [
-    {
-      id: 1,
-      img: '/assets/images/svgs/icon-dd-chat.svg',
-      title: 'Chat Application',
-      subtitle: 'Messages & Emails',
-      link: '/apps/chat',
-    },
-    {
-      id: 2,
-      img: '/assets/images/svgs/icon-dd-cart.svg',
-      title: 'Todo App',
-      subtitle: 'Completed task',
-      link: '/apps/todo',
-    },
+    // {
+    //   id: 1,
+    //   img: '/assets/images/svgs/icon-dd-chat.svg',
+    //   title: 'Chat Application',
+    //   subtitle: 'Messages & Emails',
+    //   link: '/apps/chat',
+    // },
+    // {
+    //   id: 2,
+    //   img: '/assets/images/svgs/icon-dd-cart.svg',
+    //   title: 'Todo App',
+    //   subtitle: 'Completed task',
+    //   link: '/apps/todo',
+    // },
     {
       id: 3,
       img: '/assets/images/svgs/icon-dd-invoice.svg',
-      title: 'Invoice App',
-      subtitle: 'Get latest invoice',
+      title: 'Relatórios',
+      subtitle: 'Gere seus próprios relatórios para compliance',
       link: '/apps/invoice',
     },
     {
       id: 4,
-      img: '/assets/images/svgs/icon-dd-date.svg',
-      title: 'Calendar App',
-      subtitle: 'Get Dates',
+      img: '/assets/images/svgs/icon-dd-chat.svg',
+      title: 'Suporte',
+      subtitle: 'Tem alguma dúvida?, fale com nosso suporte!',
       link: '/apps/calendar',
     },
     {

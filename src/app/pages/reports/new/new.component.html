@@ -1,0 +1,53 @@
+<ngx-ui-loader [pbColor]="'#5d87ff'" [fgsColor]="'#5d87ff'" [fgsSize]="0"
+  [logoUrl]="'./assets/images/logos/light-logo.svg'" [bgsColor]="'#5d87ff'"></ngx-ui-loader>
+<div class="content">
+  <div class="row w-100 m-0">
+    <div class="col-lg-8">
+      <mat-card class="course-app cardWithShadow">
+        <mat-card-content class="p-24">
+          <div class="row justify-content-between">
+            <div class="col-12 col-lg-10 m-t-10 m-b-10">
+              <mat-form-field appearance="outline" class="w-100 hide-hint">
+                <mat-label>Digete o CPF para obter o relatório...</mat-label>
+                <input [mask]="'000.000.000-00'" [(ngModel)]="doc" (keyup.enter)="create()" matInput />
+                <mat-icon matSuffix>
+                  <i-tabler name="id-badge-2" class="icon-20"></i-tabler>
+                </mat-icon>
+              </mat-form-field>
+            </div>
+            <div class="col-12 col-lg-2 m-t-10 m-b-10">
+              <button (click)="create()" class="h-100" mat-flat-button color="primary">
+                <i-tabler class="icon-20" name="report-search">
+
+                </i-tabler>
+              </button>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <div class="row w-100 m-0">
+    <div class="col-sm-6">
+      <mat-card class="b-1 shadow-none">
+        <mat-card-header>
+          <mat-card-title>Filter</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="b-t-1">
+          <form>
+            <mat-form-field class="w-100" appearance="outline">
+              <mat-label>Number</mat-label>
+              <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="filterControl"
+                [matAutocomplete]="auto3" />
+              <mat-autocomplete #auto3="matAutocomplete">
+                <mat-option *ngFor="let searchoption of searchfilteredOptions | async" [value]="searchoption">
+                  {{ searchoption }}
+                </mat-option>
+              </mat-autocomplete>
+            </mat-form-field>
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

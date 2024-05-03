@@ -31,9 +31,6 @@
           <!-- --------------------------------------------------------------- -->
           <!--  Links -->
           <!-- --------------------------------------------------------------- -->
-          <button mat-button class="m-x-8 f-s-16 f-w-500" (click)="gotoDemos()">
-            Demos
-          </button>
 
           <!-- --------------------------------------------------------------- -->
           <!--  Links -->
@@ -109,18 +106,6 @@
           </mat-menu>
 
           <a
-            mat-button
-            class="m-x-8 f-s-16 f-w-500"
-            href="https://demos.adminmart.com/premium/angular/modernize-angular/docs/index.html"
-            >Documentation</a
-          >
-          <a
-            mat-button
-            class="m-x-8 f-s-16 f-w-500"
-            href="https://adminmart.com/support"
-            >Support</a
-          >
-          <a
             mat-flat-button
             color="primary"
             class="m-l-10"
@@ -154,16 +139,14 @@
             <div>
               <span class="f-s-16 f-w-600 m-b-16 d-flex align-items-center"
                 ><i-tabler name="rocket" class="text-accent m-r-8"></i-tabler
-                >Kick start your project with</span
+                >Due Guard</span
               >
               <h1 class="banner-title m-0">
-                Most powerful &
-                <span class="text-primary">Developer friendly </span> Angular
-                dashboard
+                Inicie sua jornada de conformidade com a
+                <span class="text-primary">plataforma</span> mais <span class="text-primary">poderosa</span> e amigável para o usuário.
               </h1>
               <p class="f-s-18 p-y-24 m-t-12 m-0 banner-subtitle">
-                Modernize comes with light & dark color skins, well designed
-                dashboards, applications and pages.
+                Proteja sua empresa com relatórios de compliance personalizados do Due Guard. Nossa plataforma intuitiva simplifica o processo de geração de relatórios, permitindo que você selecione os módulos específicos necessários para atender às regulamentações governamentais e garantir a conformidade interna.
               </p>
               <div class="m-t-24 hstack">
                 <a
@@ -178,7 +161,7 @@
                   color="primary"
                                    (click)="gotoDemos()"
                   class="btn-custom border-primary"
-                  >Live Preview</a
+                  >Cadastro</a
                 >
               </div>
             </div>
@@ -255,19 +238,17 @@
                 />
               </div>
               <span class="f-s-16 f-w-500 m-l-10"
-                ><span class="f-w-600">52,589+</span> developers & agencies
-                using our templates</span
+                ><span class="f-w-600">150.000+</span> de relatórios emitidos</span
               >
             </div>
             <h2 class="section-title">
-              Production Ready & Developer Friendly Material Angular Admin
-              Template
+              Templates prontos para uso, selecionados especialmente para você!
             </h2>
           </div>
         </div>
         <div class="text-center m-t-30 m-b-32">
           <span class="bg-primary p-8 rounded-pill text-white f-w-600 p-x-10">
-            Demos
+            KYC
           </span>
         </div>
         <!-- demos and apps -->
@@ -278,7 +259,7 @@
                 <img [src]="demo.imgSrc" alt="demos" class="rounded w-100" />
                 <div class="overlay-content">
                   <a href="{{demo.url}}" mat-flat-button color="primary">
-                    Live preview
+                    Vizualizar
                   </a>
                 </div>
               </div>
@@ -287,10 +268,10 @@
               }}</span>
             </div>
           </div>
-        </div>
+        </div>  
         <div class="text-center m-t-30 m-b-32">
           <span class="bg-primary p-8 rounded-pill text-white f-w-600 p-x-10">
-            Apps
+            Legal e Privacidade
           </span>
         </div>
         <!-- apss -->
@@ -301,7 +282,7 @@
                 <img [src]="app.imgSrc" alt="apps" class="rounded w-100" />
                 <div class="overlay-content">
                   <a href="{{app.url}}" mat-flat-button color="primary">
-                    Live preview
+                    Vizualizar
                   </a>
                 </div>
               </div>
@@ -323,10 +304,9 @@
     <div class="bg-extra-light spacer">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-8 col-sm-11">
+          <div class="col-lg-10 col-sm-11">
             <h2 class="section-title text-center">
-              Increase speed of your development and launch quickly with
-              Modernize
+              O Due Guard simplifica a conformidade. Crie relatórios personalizados com facilidade, selecione módulos específicos e proteja sua empresa. Experimente agora.
             </h2>
           </div>
         </div>
@@ -363,8 +343,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 col-sm-11">
             <h2 class="section-title text-center">
-              Don’t just take our words for it, See what developers like you are
-              saying
+              Veja o que nossos clientes têm a dizer sobre o Due Guard:
             </h2>
           </div>
         </div>
@@ -414,9 +393,9 @@
                   </div>
                 </div>
                 <p class="m-t-24 f-s-14 m-b-0">
-                  The dashboard template from adminmart has helped me provide a
-                  clean and sleek look to my dashboard and made it look exactly
-                  the way I wanted it to, mainly without having.
+                 {{
+                  testimonial.text
+                 }}
                 </p>
               </mat-card-content>
             </mat-card>
@@ -434,19 +413,19 @@
     <div class="spacer">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-6 col-sm-8">
+          <div class="col-lg-7 col-sm-9">
             <span
               class="text-primary text-uppercase d-block text-center f-w-500"
-              >ALMOST COVERED EVERYTHING</span
+              >Diversos recursos disponíveis</span
             >
             <h2 class="section-title text-center m-t-16">
-              Other Amazing Features & Flexibility Provided
+              Descubra o poder do Due Guard: Recursos essenciais para sua conformidade
             </h2>
           </div>
         </div>
 
         <!-- features -->
-        <div class="row m-t-24">
+        <div class="row m-t-24 justify-content-center">
           <div
             class="col-sm-4 col-lg-3 text-center"
             *ngFor="let feature of features"
@@ -482,25 +461,18 @@
           >
             <mat-card-content class="p-32 text-center">
               <h3 class="f-s-24 f-w-600 m-0 m-t-12 mat-subtitle-1">
-                Haven't found an answer to your question?
+                Não encontrou uma resposta para sua pergunta?
               </h3>
               <span class="f-s-14 f-w-500 m-t-8 d-block"
-                >Connect with us either on discord or email us</span
+                >Envie-nos um e-mail</span
               >
               <div class="m-t-30 m-b-16 hstack justify-content-center">
-                <a
-                  mat-flat-button
-                  href="https://discord.com/invite/XujgB8ww4n"
-                  color="primary"
-                  class="btn-custom"
-                  >Ask on Discord</a
-                >
                 <a
                   mat-stroked-button
                   href="https://adminmart.com/support"
                   color="accent"
                   class="btn-custom border-accent"
-                  >Submit Ticket</a
+                  >Enviar E-mail</a
                 >
               </div>
             </mat-card-content>
@@ -521,8 +493,7 @@
         <div class="row justify-content-between">
           <div class="col-lg-5">
             <h3 class="m-t-0 section-title2 text-white m-b-24">
-              Build your app with our highly customizable Angular based
-              Dashboard
+              Crie seu relatório customizamido com a nossa plataforma
             </h3>
             <div class="hstack">
               <a
@@ -535,7 +506,7 @@
                 mat-stroked-button
                 color="white"
                 class="btn-custom sm text-white f-w-500 border-white"
-                >Download Free Version</a
+                >Cadastro</a
               >
             </div>
           </div>
@@ -557,7 +528,7 @@
           'url(/assets/images/landingpage/shape/line-bg-2.svg)'
         "
       >
-        <mat-card-content class="p-24">
+        <!-- <mat-card-content class="p-24">
           <div class="hstack justify-content-between align-items-center">
             <div class="d-flex align-items-center">
               <img
@@ -582,7 +553,7 @@
               >Login</a
             >
           </div>
-        </mat-card-content>
+        </mat-card-content> -->
       </mat-card>
     </div>
 
@@ -601,11 +572,11 @@
               <img src="assets/images/landingpage/favicon.png" alt="logo" />
             </span>
             <div class="f-s-14 m-t-8">
-              All rights reserved by Modernize. Designed & Developed by
+              Todos os direitos reservados a Due Guard. Desenhado e desenvolvido por 
               <a
                 [routerLink]="['https://adminmart.com/']"
                 class="mat-subtitle-2"
-                >AdminMart </a
+                >Due Guard </a
               >.
             </div>
           </div>

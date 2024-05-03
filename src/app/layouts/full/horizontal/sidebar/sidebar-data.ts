@@ -12,12 +12,12 @@ export const navItems: NavItem[] = [
       {
         displayName: 'Analytical',
         iconName: 'point',
-        route: 'dashboards/dashboard1',
+        route: 'pages/dashboards/dashboard1',
       },
       {
         displayName: 'eCommerce',
         iconName: 'point',
-        route: 'dashboards/dashboard2',
+        route: 'pages/dashboards/dashboard2',
       },
     ],
   },
@@ -301,7 +301,7 @@ export const navItems: NavItem[] = [
               {
                 displayName: 'Side Login',
                 iconName: 'point',
-                route: '/authentication/side-login',
+                route: 'pages/authentication/side-login',
               },
               {
                 displayName: 'Boxed Login',
@@ -408,7 +408,7 @@ export const navItems: NavItem[] = [
           {
             displayName: 'Datepicker',
             iconName: 'point',
-            route: 'forms/forms-elements/datepicker',
+            route: 'forms-elements/datepicker',
           },
         ],
       },
